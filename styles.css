@@ -1,0 +1,88 @@
+/* Estilos básicos para el cuerpo */
+body {
+    background-color: purple;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilos para el botón de la imagen */
+.boton-imagen {
+    display: inline-block;
+    margin-top: 120px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo del botón */
+    left: 0%;
+    transform: none;
+}
+
+.boton-imagen img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto;
+    border: none;
+    cursor: pointer;
+    animation: latido 1.5s infinite;
+    
+}
+
+/* Animación del latido */
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.boton-imagen img:hover {
+    animation: latido-hover 0.75s infinite;
+}
+
+@keyframes latido-hover {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .boton-imagen {
+        margin-top: 40px;
+        max-width: 150px; /* Reduce el tamaño del botón en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Aún más pequeño en pantallas muy pequeñas */
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .boton-imagen {
+        margin-top: 30px;
+        max-width: 120px; /* Tamaño más pequeño del botón */
+    }
+}
