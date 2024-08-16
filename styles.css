@@ -54,7 +54,7 @@ body {
 .texto-bajo-boton {
     margin-top: 20px;
     font-size: 1.2rem; /* Ajusta el tamaño de la fuente según sea necesario */
-    color: white; /* Color del texto */
+    color: pink; /* Color del texto */
 }
 
 /* Estilos responsivos */
